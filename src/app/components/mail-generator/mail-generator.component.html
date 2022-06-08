@@ -6,6 +6,8 @@
       <input type="text" [(ngModel)]="titulo">
       <h4>Cuerpo de la carta</h4>
       <textarea cols="50" rows="10" [(ngModel)]="texto"></textarea>
+      <br>
+      <button (click)="createPDF()">Crear PDF</button>
     </div>
     <div class="col">
       <div style=" width:400px; height:600px; border: black 1px solid; padding: 30px">
