@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfMake/build/vfs_fonts';
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
   selector: 'app-mail-generator',
@@ -13,6 +16,21 @@ export class MailGeneratorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  createPDF(){
+
+    const pdfDefinition: any = {
+      content: [
+        {
+          text: this.titulo + '\n' + '\n' + this.texto,
+        }
+      ]
+    }
+
+    const pdf = pdfMake.createPdf(pdfDefinition);
+    pdf.open();
+
   }
 
 }
