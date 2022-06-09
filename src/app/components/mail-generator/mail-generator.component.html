@@ -5,7 +5,7 @@
       <h5>Saludo</h5>
       <input type="text" [(ngModel)]="titulo">
       <h4>Cuerpo de la carta</h4>
-      <textarea cols="50" rows="10" [(ngModel)]="texto"></textarea>
+      <textarea style="resize: none;" cols="50" rows="10" [(ngModel)]="texto"></textarea>
       <br>
       <button (click)="createPDF()">Crear PDF</button>
     </div>
