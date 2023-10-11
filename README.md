@@ -1,6 +1,8 @@
 # MailLetterGenerator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Dynamically edit the content of your letter and see a real-time preview of your letter as you type, making it easy to make changes and adjustments.
+Once your letter is ready, you can generate a PDF version and download it for sharing or printing.
 
 ## Development server
 
